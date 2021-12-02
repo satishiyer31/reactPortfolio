@@ -5,6 +5,7 @@ import Resume from './pages/Resume';
 import Aboutme from './pages/Aboutme';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Title from  './Title';
 
 
 const Header = (props) =>{
@@ -28,6 +29,7 @@ const Header = (props) =>{
 
   return (
     <div>
+      <Title name={'Satish Iyer'} className={'Title'}/>
       {/* // TODO: Add a comment describing what we are passing as props */}
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* // TODO: Add a comment explaining what is happening on the following line */}

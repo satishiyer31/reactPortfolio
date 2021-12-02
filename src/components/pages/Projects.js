@@ -41,7 +41,8 @@ const Projects = () => {
         
             {
                 projects.map((project) => (
-                    <Project key={project.id} project={projects}/>
+                    <Project key={project.id} projects={project}/>
+                    // console.log(project.title)
                 ))
             }   
         
