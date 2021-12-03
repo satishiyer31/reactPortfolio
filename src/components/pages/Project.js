@@ -1,15 +1,21 @@
-const Project = ({ projects }) => {
+import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+
+const Project = ({ key, project }) => {
     return (
-        <div className= "card mx-auto">
-            
-                <img src={""} className="card-img-top"/>
-                <div className="card-body">
-                    <h5 className="card-title"> {projects.title}</h5>
-                    <p className="card-text">{projects.desc}</p>
-                    <a href={projects.link} className="btn btn-primary"> View Application</a>
-                </div>
-            
-        </div>
+        
+
+        <Card key={key} style={{ width: '18rem', margin: "10px"}}>
+                {/* {project.img? (
+                  <Card.Img src={project.image} alt={`The cover for ${project.title}`} variant='top' />
+                ) : null} */}
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  {/* <p className='small'>Authors: {book.authors}</p> */}
+                  <Card.Text>{project.desc}</Card.Text>
+                  <Card.Link href= {project.link}>Deployed Link</Card.Link>
+                  <Card.Link href= {project.github}>Github Link</Card.Link>
+                </Card.Body>
+              </Card>
     )
 }
 

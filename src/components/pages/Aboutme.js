@@ -19,16 +19,18 @@ const Aboutme = () => {
                 </h2>
                 <p style = {{  "text-align": "left"}}>
                     Hello, Thank you for visiting my page. I am a Technical Sales Engineer working with Zendesk. I own the technical aspect of any software sales in my patch. I build proof of concepts as well as simple integrations to demonstrate the value of the software. My background includes working on professional services as well as software development. I am passionate about coding and I am currently pursuing a full stack software dev bootcamp with University of Denver. My skills include the following:
-                      <br></br>
-                      <br></br>
-                        <p>
+                      <br/>
+                      <br/>
+                        {/* <p>
                         Front end: HTMl, CSS, JS, Bootstrap, React.js
                         </p>
                         <p> Databases: Mongo DB, MySQL </p> 
                         <p> Backend: SQL, sequelize.js, Node.js, express.js, Mongoose ODM
                         </p>
-                        
-                    <br></br>
+                         */}
+
+                     I live in Boulder, CO and love the outdoors. I love playing chess, sudoku, coding. I like to stay active and love the colorado outdoors.    
+                    <br/> <br/>
                     My goal is to be able give life to my ideas by building products that can make life simple. 
                 </p>
             </Col>
